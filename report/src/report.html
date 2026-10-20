@@ -315,7 +315,7 @@ general_p6_gen_Re (любая опора, порядок 6, 7 стадий):
   0.159533076019714−0.159429278835120i  0.200918047206686+0.068726888040856i
   0.027038247788682+0.179681223621302i  0.178206598269560−0.029764749770839i
   0.162013059023326+0.122726548997672i</pre>
-<p class="small">Полные наборы лежат в <span class="mono">review/data/polished.json</span> (30 знаков) и в исходном <span class="mono">results/coeff_search.json</span>. Исходные коэффициенты верны с точностью около 1e-7: решения образуют вырожденные семейства. На двойную точность это не влияет.</p>
+<p class="small">Полные наборы лежат в <span class="mono">review/data/polished.json</span> (30 знаков) и в исходном <span class="mono">composition_solver/results/coeff_search.json</span>. Исходные коэффициенты верны с точностью около 1e-7: решения образуют вырожденные семейства. На двойную точность это не влияет.</p>
 
 <figure><img src="../figs/fig_q4_local_hp.png">
 <figcaption>Рис. 21. Локальная ошибка в 50 знаках (данные ревью, Дуффинг). Слева Грэгг: P6C и P6R дают 5, все три найденные схемы дают 6. Справа Хойн: стандартные P4C и P6C дают 3, найденные general_* дают 4 и 6.</figcaption></figure>
@@ -407,15 +407,21 @@ general_p6_gen_Re (любая опора, порядок 6, 7 стадий):
 <li>Оптимизация найденных семейств по вторичному критерию (область устойчивости, константа ошибки) не делалась. Здесь уместна суррогатная модель, в том числе нейросетевая.</li>
 </ul>
 <h3>Воспроизведение</h3>
-<pre>pip install numpy scipy matplotlib mpmath
-cd report/src
-python3 fig_q1.py     # введение и вопрос 1 (~40 с на 4 ядрах)
-python3 fig_q2.py     # вопрос 2
-python3 fig_q3.py     # вопрос 3
-python3 fig_q4.py     # вопрос 4
-python3 ../../kd_article_repro/kd_repro.py   # раздел 6 (статья о KD)
-node build_pdf.js     # этот PDF</pre>
-<p class="small">Скрипты подключают <span class="mono">composition_solver/csolver</span> без изменений; уточнённые коэффициенты читаются из <span class="mono">review/data/polished.json</span>, высокоточные локальные ошибки из <span class="mono">review/data/r3_local*.json</span>.</p>
+<p class="small">Код, данные и этот отчёт лежат в репозитории <span class="mono">github.com/Demonica22/methods</span>. Все команды выполняются из корня клона; скрипты находят пути сами.</p>
+<pre>git clone https://github.com/Demonica22/methods.git
+cd methods
+pip install -r requirements.txt     # numpy scipy matplotlib mpmath pillow
+
+python3 report/src/fig_q1.py        # введение и вопрос 1 (~40 с на 4 ядрах)
+python3 report/src/fig_q2.py        # вопрос 2
+python3 report/src/fig_q3.py        # вопрос 3
+python3 report/src/fig_q4.py        # вопрос 4
+python3 kd_article_repro/kd_repro.py   # раздел 6 (статья о KD) -> kd_article_repro/figs/
+
+npm install playwright pptxgenjs
+node report/src/build_pdf.js        # этот PDF -> report/report.pdf
+node report/src/build_pptx.js       # презентация -> report/presentation.pptx</pre>
+<p class="small">Графики отчёта пишутся в <span class="mono">report/figs/</span>, данные в <span class="mono">report/data/</span>. Скрипты подключают пакет <span class="mono">composition_solver/csolver</span> без изменений; уточнённые коэффициенты читаются из <span class="mono">review/data/polished.json</span>, высокоточные локальные ошибки из <span class="mono">review/data/r3_local*.json</span> (их пересчитывают <span class="mono">review/r2_order_conditions.py</span> и <span class="mono">review/r3_local_order.py</span>). Основные эксперименты решателя: <span class="mono">python3 composition_solver/experiments/&lt;скрипт&gt;.py</span>, подробнее в README репозитория.</p>
 
 </body>
 </html>

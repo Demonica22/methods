@@ -305,7 +305,7 @@ caption(s, "Скрипт и сравнения: kd_article_repro/ (kd_repro.py, 
 pres.addSection({ title: "Итог" });
 s = pres.addSlide({ masterName: "DARK", sectionTitle: "Итог" });
 s.addText("Итог", { placeholder: "title" });
-s.addText("Трапеции и KD дают 2/4/6, Грэгг 2/4/5. Порядок 6 на Грэгге возможен со специальными коэффициентами (5 стадий). A-устойчивость сохраняют P3C и P6SC на трапециях. Нежёсткие сбои связаны с неаналитичностью f и с комплексными задачами. Отчёт: report.pdf, код графиков: report/src.", { placeholder: "body" });
+s.addText("Трапеции и KD дают 2/4/6, Грэгг 2/4/5. Порядок 6 на Грэгге возможен со специальными коэффициентами (5 стадий). A-устойчивость сохраняют P3C и P6SC на трапециях. Нежёсткие сбои связаны с неаналитичностью f и с комплексными задачами. Код и отчёт: github.com/Demonica22/methods (report/report.pdf, графики: report/src).", { placeholder: "body" });
 
 (async () => {
   await pres.writeFile({ fileName: OUT });
