@@ -1,0 +1,47 @@
+{
+ "van_der_pol": {
+  "midpoint|P2": 2.0011094061406682,
+  "midpoint|P4C": 3.815045116216994,
+  "midpoint|P6C": 5.860978723606783,
+  "midpoint|P6R": 5.017440389134965,
+  "midpoint|midpoint_p6_gen_Re": 6.777826138668625,
+  "midpoint|midpoint_p6_pal_Re": 6.782030888547223,
+  "midpoint|midpoint_p6_pal_C": 6.851887857203407
+ },
+ "forced_duffing": {
+  "midpoint|P2": 2.000624061300549,
+  "midpoint|P4C": 3.985359524808232,
+  "midpoint|P6C": 5.432279293072502,
+  "midpoint|P6R": 4.99849691625807,
+  "midpoint|midpoint_p6_gen_Re": 6.353167019228292,
+  "midpoint|midpoint_p6_pal_Re": 6.242695416551466,
+  "midpoint|midpoint_p6_pal_C": 6.276579317291924
+ },
+ "lotka_volterra": {
+  "midpoint|P2": 2.00020931483088,
+  "midpoint|P4C": 3.8688023782788203,
+  "midpoint|P6C": 5.631456745250461,
+  "midpoint|P6R": 5.003013312871735,
+  "midpoint|midpoint_p6_gen_Re": 6.137454860623249,
+  "midpoint|midpoint_p6_pal_Re": 6.130656505288587,
+  "midpoint|midpoint_p6_pal_C": 6.144463359892653
+ },
+ "van_der_pol_heun": {
+  "heun|P2": 1.966533044604875,
+  "heun|P4C": 3.0426076321831643,
+  "heun|P6C": 3.021046724396438,
+  "heun|general_p4_gen_Re": 3.9387044324195037,
+  "heun|general_p4_pal_Re": 3.9939471557455684,
+  "heun|general_p6_gen_Re": 6.691876549362707,
+  "heun|general_p6_pal_Re": 7.022438930631064
+ },
+ "forced_duffing_heun": {
+  "heun|P2": 1.9945807628657486,
+  "heun|P4C": 2.9980974122684256,
+  "heun|P6C": 2.9959254960922364,
+  "heun|general_p4_gen_Re": 4.033100105284332,
+  "heun|general_p4_pal_Re": 4.023864607323783,
+  "heun|general_p6_gen_Re": 6.827838540010786,
+  "heun|general_p6_pal_Re": 6.496865539456344
+ }
+}

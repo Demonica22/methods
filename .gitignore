@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+node_modules/
+package-lock.json
+.DS_Store
+Thumbs.db
+*~
+# страницы статьи для kd_article_repro/compare.py (сама статья в репозиторий не кладётся)
+kd_article_repro/pdf/
+*.article.pdf

@@ -1,0 +1,43 @@
+  general p=4 pal=True proj=True: m=2 нет решений
+  midpoint p=6 pal=True proj=True: m=2 нет решений
+  midpoint p=6 pal=True proj=False: m=2 нет решений
+  midpoint p=6 pal=True proj=False: m=3 нет решений
+  midpoint p=6 pal=True proj=True: m=3 нет решений
+  midpoint p=6 pal=True proj=False: m=4 нет решений
+  midpoint p=6 pal=False proj=True: m=2 нет решений
+  midpoint p=6 pal=False proj=True: m=3 нет решений
+  midpoint p=6 pal=True proj=True: m=4 нет решений
+  midpoint p=6 pal=True proj=False: m=5 нет решений
+  midpoint p=6 pal=True proj=False: m=6 нет решений
+  midpoint p=6 pal=True proj=True: m=5 нет решений
+  midpoint p=6 pal=False proj=True: m=4 нет решений
+  midpoint p=6 pal=True proj=False: m=7 нет решений
+  midpoint p=6 pal=True proj=False: m=8 нет решений
+  midpoint p=6 pal=True proj=True: m=6 нет решений
+  general p=4 pal=False proj=True: m=2 нет решений
+  general p=4 pal=True proj=False: m=2 нет решений
+  general p=4 pal=True proj=False: m=3 нет решений
+  general p=4 pal=True proj=False: m=4 нет решений
+  general p=4 pal=False proj=False: m=2 нет решений
+  general p=4 pal=False proj=False: m=3 нет решений
+  general p=6 pal=True proj=True: m=2 нет решений
+  general p=6 pal=False proj=True: m=2 нет решений
+  general p=6 pal=True proj=True: m=3 нет решений
+  general p=6 pal=False proj=True: m=3 нет решений
+  general p=6 pal=True proj=True: m=4 нет решений
+  general p=6 pal=False proj=True: m=4 нет решений
+  general p=6 pal=True proj=True: m=5 нет решений
+  general p=6 pal=True proj=True: m=6 нет решений
+  general p=6 pal=False proj=True: m=5 нет решений
+  general p=6 pal=True proj=True: m=7 нет решений
+  general p=6 pal=True proj=True: m=8 нет решений
+  general p=6 pal=False proj=True: m=6 нет решений
+midpoint 6 True True -> 7
+midpoint 6 True False -> 9
+midpoint 6 False True -> 5
+general 4 True True -> 3
+general 4 False True -> 3
+general 4 True False -> 5
+general 4 False False -> 4
+general 6 True True -> 9
+general 6 False True -> 7
