@@ -1,0 +1,6 @@
+{
+  "name": "paper-build",
+  "private": true,
+  "description": "Сборка PDF статьи: npm install && node build_pdf.js",
+  "dependencies": { "katex": "0.16.11" }
+}
